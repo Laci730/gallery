@@ -1,4 +1,6 @@
-export const exhibitionItems = [
+import { exhibitionItem } from "./types";
+
+export const exhibitionItems: exhibitionItem[] = [
     {
         id: 1,
         img: "../assets/img/e1.png",

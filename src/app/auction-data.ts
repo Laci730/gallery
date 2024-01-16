@@ -1,4 +1,6 @@
-export const auctionItems = [
+import { auctionItem } from "./types";
+
+export const auctionItems: auctionItem[] = [
     {
         id: 1,
         img: "../assets/img/a1.png",
