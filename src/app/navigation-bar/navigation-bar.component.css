@@ -1,0 +1,48 @@
+.navigation {
+    font-family: 'Josefin Slab', serif;
+    height: 100px;
+    width: calc(100dvw - 200px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A76E00;
+}
+
+.logo {
+    display: grid;
+    place-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation-links {
+    height: 100%;
+    display: flex;
+}
+
+.navigation-links > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    font-size: 32px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.navigation-links > a:hover {
+    background-color: #935A00;
+}
+
+.nav-active {
+    background-color: #935A00;
+}
