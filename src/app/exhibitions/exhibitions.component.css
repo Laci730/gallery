@@ -1,0 +1,39 @@
+.title, 
+.ex-container {
+    font-family: 'Josefin Slab', serif;
+}
+
+.title {
+    font-size: 48px;
+    padding-top: 1em;
+}
+
+.ex-container {
+    font-size: 32px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    grid-template-columns: 
+        repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.exhibition-item-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exhibition-item-title {
+    align-self: flex-start;
+    padding-left:
+        calc((100% - 600px) / 2);
+}
+
+.exhibition-image:hover {
+    transition: 100ms linear;
+    transform: scale(1.005);
+    filter: brightness(0.8);
+    cursor: pointer;
+}

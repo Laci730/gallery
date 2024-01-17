@@ -1,0 +1,13 @@
+<section id="exhibitions">
+    <h2 class="title">
+        Upcoming exhibitions
+    </h2>
+    <div class="ex-container">
+        <div *ngFor="let item of exhibitionItems" class="exhibition-item-container">
+            <img class="exhibition-image" [src]="item.img">
+            <p class="exhibition-item-title">
+                {{item.title}}
+            </p>
+        </div>
+    </div>
+</section>

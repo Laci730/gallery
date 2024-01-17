@@ -14,11 +14,11 @@ export const exhibitionItems: exhibitionItem[] = [
     {
         id: 3,
         img: "../assets/img/e3.png",
-        title: ""
+        title: "Fluttering Flora: Butterflies and Blooms"
     },
     {
         id: 4,
         img: "../assets/img/e4.png",
-        title: ""
+        title: "Urban Rhythms: Cityscape Impressions"
     }
 ]
