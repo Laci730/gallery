@@ -1,0 +1,67 @@
+.title,
+.auction-item-container {
+    font-family: "Josefin Slab", serif;
+}
+
+.title {
+    font-size: 48px;
+    padding-top: 1em;
+}
+
+.auction-item-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.auction-item {
+    display: grid;
+    grid-template-columns: 
+        repeat(auto-fit, 600px);
+}
+
+.img-container {
+    width: 600px;
+    display: grid;
+    place-content: center;
+}
+
+.auction-item-image {
+    height: 400px;
+    width: auto;
+    align-self: center;
+}
+
+.auction-info-short {
+    display: flex;
+    flex-direction: column;
+}
+
+.auction-item-name {
+    font-size: 32px;
+}
+
+.auction-artist {
+    font-size: 20px;
+}
+
+.button {
+    height: 50px;
+    width: 250px;
+    display: grid;
+    place-content: center;
+    background-color: #A76E00;
+}
+
+.button > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.button:hover {
+    transition: 150ms linear;
+    background-color: #935A00;
+    cursor: pointer;
+}

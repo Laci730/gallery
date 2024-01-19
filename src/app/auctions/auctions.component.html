@@ -1,0 +1,25 @@
+<section id="auctions">
+    <h2 class="title">
+        Current auctions
+    </h2>
+    <div class="auction-item-container">
+        <div *ngFor="let item of auctionItems" class="auction-item">
+            <div class="img-container">
+                <img [src]="item.img" class="auction-item-image">
+            </div>
+            <div class="auction-info-short">
+                <p class="auction-item-name">
+                    {{item.name}}
+                </p>
+                <p class="auction-artist">
+                    {{item.artist}}
+                </p>
+                <div class="button">
+                    <a [routerLink]="['/auctions', item.id]">
+                        View details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
