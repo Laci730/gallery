@@ -4,7 +4,9 @@
     </h2>
     <div class="ex-container">
         <div *ngFor="let item of exhibitionItems" class="exhibition-item-container">
-            <img class="exhibition-image" [src]="item.img">
+            <div class="img-container">
+                <img class="exhibition-image" [src]="item.img">
+            </div>
             <p class="exhibition-item-title">
                 {{item.title}}
             </p>
