@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 140px;
+}
+
 body {
     margin: 0px;
+    background-color: #FFE9BF;
 }
