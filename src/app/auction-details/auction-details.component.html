@@ -1,0 +1,34 @@
+<div *ngIf="auctionItem" class="container">
+    <div class="img-container">
+        <img [src]="auctionItem.img" class="item-img">
+    </div>
+    <div class="item-info">
+        <h2 class="item-name">
+            {{auctionItem.name}}
+        </h2>
+        <p class="artist-name">
+            {{auctionItem.artist}}
+        </p>
+        <p class="auction-period">
+            <span>Auction period:</span> {{auctionItem.auctionStart}} - {{auctionItem.auctionEnd}}
+        </p>
+        <p class="price-info">
+            <span>Starting price:</span> {{auctionItem.startingPrice}}
+            <br>
+            <span>Current bid:</span> {{auctionItem.currentBid}}
+            <br>
+            <span>Bid increment:</span> {{auctionItem.bidIncrement}}
+        </p>
+        <div class="bid-btn">
+            Bid now
+        </div>
+        <p class="item-description">
+            <span>
+                About the painting:
+            </span>
+            <br>
+            <br>
+            {{auctionItem.description}}
+        </p>
+    </div>
+</div>
