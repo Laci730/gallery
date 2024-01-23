@@ -1,15 +1,16 @@
 .navigation {
     font-family: 'Josefin Slab', serif;
     height: 100px;
-    width: calc(100% - 200px);
+    width: calc(100% - 100px);
     position: fixed;
     top: 0px;
     left: 0px;
-    padding: 0px 100px;
+    padding: 0px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #A76E00;
+    z-index: 1;
 }
 
 .logo {
@@ -28,7 +29,9 @@
     display: flex;
 }
 
-.navigation-links > a {
+.navigation-links > a,
+.nav-open > a {
+    width: 66%;
     color: #FFFFFF;
     text-decoration: none;
     display: grid;
@@ -39,10 +42,81 @@
     cursor: pointer;
 }
 
-.navigation-links > a:hover {
+.navigation-links > a:hover,
+.nav-open > a:hover {
     background-color: #935A00;
 }
 
-.nav-active {
-    background-color: #935A00;
+.nav-open > a {
+    padding: 16px 0px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.nav-open > a:last-child {
+    border-bottom: none;
+}
+
+.nav-open {
+    position: fixed;
+    font-family: 'Josefin Slab', serif;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #A76E00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-open > hr {
+    width: 66%;
+}
+
+.hamburger,
+.close {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger > div {
+    height: 4px;
+    width: 34px;
+    background-color: #FFFFFF;
+    margin: 3px 0px;
+    border-radius: 2px;
+}
+
+.close > div {
+    position: absolute;
+    inset: 0px;
+    margin: auto;
+    height: 4px;
+    width: 34px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
+
+.close > div:nth-child(1) {
+    transform: rotateZ(45deg);
+}
+
+.close > div:nth-child(2) {
+    transform: rotateZ(315deg);
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        padding: 0px 24px;
+        width: calc(100% - 48px);
+    }
+
+    .logo {
+        font-size: 32px;
+    }
 }

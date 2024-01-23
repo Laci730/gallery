@@ -1,9 +1,24 @@
 <nav class="navigation">
     <a href="#main" class="logo">Golden Gallery</a>
-    <div class="navigation-links">
+    <div *ngIf="!isMobile" class="navigation-links">
         <a href="#main">Home</a>
         <a href="#about">About</a>
         <a href="#exhibitions">Exhibitions</a>
         <a href="#auctions">Auctions</a>
     </div>
+    <div *ngIf="isMobile && !isOpened" class="hamburger" (click)="changeElement()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div *ngIf="isMobile && isOpened" class="close" (click)="changeElement()" >
+        <div></div>
+        <div></div>
+    </div>
 </nav>
+<div *ngIf="isOpened && isMobile" class="nav-open">
+    <a href="#main" (click)="changeElement()">Home</a>
+    <a href="#about" (click)="changeElement()">About</a>
+    <a href="#exhibitions" (click)="changeElement()">Exhibitions</a>
+    <a href="#auctions" (click)="changeElement()">Auctions</a>
+</div>
