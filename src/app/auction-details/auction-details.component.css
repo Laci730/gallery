@@ -36,6 +36,10 @@ span {
     margin: 16px 0px;
 }
 
+.price-info {
+    line-height: 32px;
+}
+
 .bid-btn {
     color: #FFFFFF;
     height: 50px;

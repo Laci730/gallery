@@ -13,11 +13,11 @@
             <span>Auction period:</span> {{auctionItem.auctionStart}} - {{auctionItem.auctionEnd}}
         </p>
         <p class="price-info">
-            <span>Starting price:</span> {{auctionItem.startingPrice}}
+            <span>Starting price: &nbsp;</span> {{auctionItem.startingPrice | currency}}
             <br>
-            <span>Current bid:</span> {{auctionItem.currentBid}}
+            <span>Current bid: &nbsp;</span> {{auctionItem.currentBid | currency}}
             <br>
-            <span>Bid increment:</span> {{auctionItem.bidIncrement}}
+            <span>Bid increment: &nbsp;</span> {{auctionItem.bidIncrement | currency}}
         </p>
         <div class="bid-btn">
             Bid now

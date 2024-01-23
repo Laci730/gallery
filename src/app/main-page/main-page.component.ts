@@ -14,5 +14,5 @@ import { ExhibitionsComponent } from '../exhibitions/exhibitions.component';
   styleUrl: './main-page.component.css'
 })
 export class MainPageComponent {
-
+  image = "../../assets/img/main.png";
 }
