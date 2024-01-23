@@ -1,0 +1,93 @@
+.title {
+    font-family: 'Josefin Slab', serif;
+    font-size: 48px;
+    padding-top: 1em;
+}
+
+.ex-container,
+label,
+input,
+textarea,
+button,
+.other {
+    font-family: 'Josefin Slab', serif;
+}
+
+.container {
+    display: flex;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+label {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+input {
+    max-width: 250px;
+}
+
+textarea {
+    height: 152px;
+    max-width: 400px;
+    resize: none;
+    padding: 16px;
+}
+
+.submit-btn {
+    border: none;
+    color: #FFFFFF;
+    height: 50px;
+    min-width: 100px;
+    max-width: 150px;
+    margin-top: 24px;
+    display: grid;
+    place-content: center;
+    background-color: #A76E00;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: #935A00;
+}
+
+.submit-btn:disabled {
+    background-color: #967638;
+    color: #F0F0F0;
+    cursor: default;
+}
+
+.other {
+    height: 100%;
+    padding-right: 50px;
+    align-self: center;
+    justify-self: center;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .other {
+        margin-top: 50px;
+        padding-left: 50px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 800px) {
+    form {
+        padding: 0px;
+    }
+
+    .other {
+        padding: 0px;
+    }
+}

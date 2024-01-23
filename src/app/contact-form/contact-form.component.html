@@ -1,0 +1,32 @@
+<section id="contact">
+    <h2 class="title">
+        Contact us
+    </h2>
+    <div class="container">
+        <form #messageForm="ngForm" (ngSubmit)="onSubmit()">
+            <label for="email">Email address</label>
+            <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                class="contact-email" 
+                required 
+                [(ngModel)]="model.emailAddress"
+                name="emailAddress">
+            <label for="text">Message</label>
+            <textarea 
+                name="text" 
+                id="text"
+                class="contact-msg"
+                [(ngModel)]="model.message"
+                name="message">
+            </textarea>
+            <button [disabled]="!messageForm.form.valid" type="submit" class="submit-btn">Send</button>
+        </form>
+        <section class="other">
+            <h4>If you have a picture for sale or need information, call us or come to our gallery:</h4>
+            <p>Phone: 123 456 789</p>
+            <p>Address: 4567 1st Street, Snow City</p>
+        </section>
+    </div>
+</section>

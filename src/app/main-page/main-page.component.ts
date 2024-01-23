@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AboutComponent } from '../about/about.component';
 import { AuctionsComponent } from '../auctions/auctions.component';
 import { ExhibitionsComponent } from '../exhibitions/exhibitions.component';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
 
 @Component({
   selector: 'app-main-page',
@@ -9,7 +10,9 @@ import { ExhibitionsComponent } from '../exhibitions/exhibitions.component';
   imports: [
     AboutComponent,
     AuctionsComponent,
-    ExhibitionsComponent],
+    ExhibitionsComponent,
+    ContactFormComponent
+  ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.css'
 })
