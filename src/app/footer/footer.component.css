@@ -1,0 +1,28 @@
+footer {
+    margin-top: 100px;
+    font-family: 'Josefin Slab', serif;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A76E00;
+    color: #FFFFFF;
+}
+
+.links {
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.links > a {
+    font-family: 'Josefin Slab', serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 8px;
+}
+

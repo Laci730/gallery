@@ -3,6 +3,7 @@ import { AboutComponent } from '../about/about.component';
 import { AuctionsComponent } from '../auctions/auctions.component';
 import { ExhibitionsComponent } from '../exhibitions/exhibitions.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-main-page',
@@ -11,7 +12,8 @@ import { ContactFormComponent } from '../contact-form/contact-form.component';
     AboutComponent,
     AuctionsComponent,
     ExhibitionsComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FooterComponent
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.css'
